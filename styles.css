@@ -1,0 +1,723 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    overflow-x: hidden;
+}
+.navbar {
+    position: absolute;
+    width: 70%;
+    background-color: #333;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.navbar nav ul {
+    display: flex;
+    gap: 30px;
+}
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d1f20;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-text h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-image img {
+    width: 700px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 350px;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.projects-section {
+    padding: 80px 20px;
+}
+
+.project-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+body.dark-mode {
+    background-color: #232222;
+    color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+    transition: 0.3s;
+}
+
+.hero-section {
+    background: linear-gradient(45deg, #ff7f50, #ff6347);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #f39c12;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e67e22;
+}
+
+.hero-image img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.skills-section {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.skill h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.skill .progress-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.skill .progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.projects-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Certificates Section */
+.certificates-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.certificates-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.certificates-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.certificate-card p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff7f50, #ff6347);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-image img {
+    width: 70%;
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.skills-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    text-align: center;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projects-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    max-width: 400px;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.certificates-section {
+    padding: 80px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.certificates-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.certificates-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.certificate-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    max-width: 400px;
+    text-align: center;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .social-icon {
+    width: 40px;
+    margin: 0 15px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+    transform: scale(1.2);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1DA1F2;
+}
+
+
+
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.logo {
+    font-size: 36px;
+    color: #f39c12;
+    margin-right: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-link:hover {
+    color: #f39c12;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        margin-top: 250px;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .skills .skill,
+    .project-cards .project-card,
+    .certificates-cards .certificate-card {
+        width: 100%;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.project-card,
+.certificate-card {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+
+@media (max-width: 470px) {
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 90%;
+    }
+
+    .skills .skill {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .certificate-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
